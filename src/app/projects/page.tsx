@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import Container from "@/components/layout/Container";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { fadeInUp, scaleIn, staggerContainer } from "@/lib/animations";
@@ -105,8 +106,17 @@ export default function ProjectsPage() {
       {/* Hero Banner */}
       <section className="relative pt-32 pb-20 lg:pt-44 lg:pb-28 bg-navy-950 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800" />
+        <div className="absolute inset-0">
+          <Image
+            src="/images/projects/altus-house.jpg"
+            alt="Altus House, Leeds - Yorkshire's tallest building"
+            fill
+            sizes="100vw"
+            className="object-cover object-center opacity-30"
+          />
+        </div>
+        <div className="absolute inset-0 bg-navy-950/60" />
         <div className="absolute inset-0 diagonal-lines opacity-40" />
-        <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-cyan-500/5 blur-[120px]" />
 
         <Container className="relative z-10">
           <motion.div

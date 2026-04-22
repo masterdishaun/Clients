@@ -63,8 +63,17 @@ export default function NewsPage() {
       {/* Hero Banner */}
       <section className="relative pt-32 pb-20 lg:pt-44 lg:pb-28 bg-navy-950 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800" />
+        <div className="absolute inset-0">
+          <Image
+            src="/images/projects/danum-gallery.jpg"
+            alt="Danum Gallery, Library and Museum"
+            fill
+            sizes="100vw"
+            className="object-cover object-center opacity-30"
+          />
+        </div>
+        <div className="absolute inset-0 bg-navy-950/60" />
         <div className="absolute inset-0 geometric-grid opacity-20" />
-        <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-cyan-500/5 blur-[120px]" />
 
         <Container className="relative z-10">
           <motion.div
